@@ -7,7 +7,7 @@ import URL from "./Model/URL.js";
 const app = express();
 const PORT = 3000;
 
-connectionDB("mongodb://127.0.0.1:27017/url-shortner").then(() => console.log("Connected to Database")).catch((err) => console.error(err));
+connectionDB("Enter Your MongoDB Url Here!!").then(() => console.log("Connected to Database")).catch((err) => console.error(err));
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
